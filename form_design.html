@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Design Class</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <form action="/students/save" method="POST">
+        <div class="header">
+            <h1>Student Details</h1>
+        </div>
+        <div class="main">
+                <div class="form-control-left">
+                        <div class="form-control">
+                            <label>Full Name</label>
+                            <input type="text" name="full_name" maxlength="10"/>
+                        </div>
+                        <div class="form-control">
+                            <label>ID</label>
+                            <input type="number" name="id"  min="0" />
+                            <input type="password"/>
+                            <input type="date"/>
+                            <input type="range"/>
+
+
+                        </div>
+                        <div class="form-control">
+                            <label>age</label>
+                            <input type="number" name="age"/>
+                        </div>
+
+                        <div class="form-control">
+                            <label>gender</label>
+                            <input type="radio" name="gender" value="1"/>: male
+                            <input type="radio" name="gender" value="0"/>: female
+                            <input type="radio" name="gender" value="2"/>: others
+
+
+                        </div>
+                        <div class="form-control">
+                            <label>interested modules</label>
+                            <input type="checkbox" name="interested_module" value="m_1"/>: module 1
+                            <input type="checkbox" name="interested_module" value="m_2"/>: module 2
+                            <input type="checkbox" name="interested_module" value="m_3"/>: module 3
+
+
+                        </div>
+
+                        <div class="form-control">
+                            <select name="batch">
+                                <option value="b_1">batch 1</option>
+                                <option value="b_2">batch 2</option>
+                                <option value="b_3">batch 3</option>
+                            </select>
+                        </div>
+
+                        <textarea name="description"></textarea>
+
+                </div>
+                <div class="form-control-right">
+
+                </div>
+        </div>
+        <div class="footer">
+            <button type="reset">reset</button>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
